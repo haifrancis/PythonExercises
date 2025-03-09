@@ -1,11 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Exercises</title>
+    <style>
+        body {
+            display: flex;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .sidebar {
+            width: 250px;
+            background: #333;
+            color: white;
+            height: 100vh;
+            padding: 15px;
+        }
+        .sidebar a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            border-bottom: 1px solid #555;
+        }
+        .sidebar a:hover {
+            background: #555;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+        iframe {
+            width: 100%;
+            height: 100vh;
+            border: none;
+        }
+    </style>
+</head>
 <body>
+    <div class="sidebar">
+        <h2>Table of Contents</h2>
+        <a href="for_loop_1a.html" target="contentFrame">For Loop Exercises - 1</a>
+        <!-- <a href="for_loop_1b.html" target="contentFrame">For Loop Exercises - 2</a> -->
 
-<h1>My First Heading</h1>
-
-<p>My first paragraph.</p>
-
+        <!-- <div class="submenu" onclick="toggleSubmenu('submenu1')">Page 1 </div>
+        <div id="submenu1" class="submenu-container">
+            <a href="page1.html" target="contentFrame">Section 1</a>
+            <a href="section2.html" target="contentFrame">Section 2</a>
+            <a href="section3.html" target="contentFrame">Section 3</a>
+        </div> -->
+        <!--
+        <a href="page2.html" target="contentFrame">Page 2</a>
+        <a href="page3.html" target="contentFrame">Page 3</a>
+        -->
+    </div>
+    <div class="content">
+        <iframe name="contentFrame" src="welcome.html"></iframe>
+        <div class="instructions">Please click on the items in the left pane to view the content.</div>
+    </div>
 </body>
 </html>
-
